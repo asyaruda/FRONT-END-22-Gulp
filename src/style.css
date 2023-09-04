@@ -1,0 +1,84 @@
+body, ul, li, p, h1, h2, h3, h4, h5, h6, button, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+
+#todoList {
+  list-style: none;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.todoItem.done {
+  background-color: #e0f7d0; 
+  text-decoration: line-through; 
+}
+
+.deleteBtn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 12px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.deleteBtn:hover {
+  background-color: #c0392b;
+}
+
+
+#todoForm {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#title {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 70%;
+}
+
+
+#msgButton {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin-left: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#msgButton:hover {
+  background-color: #2980b9;
+}
